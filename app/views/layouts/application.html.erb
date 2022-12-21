@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Mysite</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,16 +11,12 @@
   </head>
 
   <body>
-    <header>
-      <div>
-        
-      </div>
-    </header>
+    <%= render 'layouts/header' %>
     <main>
       <%= yield %>
     </main>
     <footer>
-      
+      <p class="copyright">©︎ 2017 WebCamp</p>
     </footer>
   </body>
 </html>
