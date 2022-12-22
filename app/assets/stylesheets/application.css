@@ -34,6 +34,7 @@ header {
 .header-group {
   display: flex;
   justify-content: space-between;
+  font-size: 0;
 }
 
 .logo {
@@ -51,6 +52,7 @@ a {
 .nav-list {
   width: 120px;
   line-height: 70px;
+  color: #FAFAFA;
   padding: 0 30px;
   list-style: none;
   font-size: 16px;
@@ -72,6 +74,7 @@ a {
 
 .mv-title {
   padding-top: 200px;
+  font-family: 'Raleway', sans-serif;
   font-size: 64px;
 }
 
@@ -88,6 +91,7 @@ a {
   padding-top: 90px;
   text-align: center;
   font-size: 32px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .heading::after {
@@ -115,6 +119,10 @@ a {
 
 .production:nth-child(-n+3) {
   margin-top: 0;
+}
+
+.production:nth-child(3n) {
+  margin-right: 0;
 }
 
 .production {
@@ -154,10 +162,42 @@ a {
   background-position: center;
 }
 
+.strength-group {
+  display: flex;
+  width: 980px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
 
+.strength {
+  width: 320px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 60px;
+}
 
+.strength-title {
+  padding: 10px 0;
+  font-size: 20px;
+}
 
+.strength-text {
+  text-align: left;
+  font-size: 16px;
+}
 
+.strength:last-child {
+  margin-right: 0;
+}
+
+#profile {
+  background-color: #ECEFF1;
+}
+
+.profile-group {
+  display: flex;
+  padding: 30px 0 90px 0;
+}
 
 .contact-group {
   display: flex;
@@ -172,6 +212,18 @@ a {
 
 .right-content {
   width: 50%;
+}
+
+.my-face {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url(../img/my-icon.jpg);
+}
+
+.description-title:first-child {
+  margin-top: 0;
 }
 
 .description-title {
@@ -207,6 +259,10 @@ a {
   color: #212121;
 }
 
+.right-contact-content .fa:last-child {
+    margin-right: 0;
+}
+
 footer {
   width: 100%;
   height: 60px;
@@ -218,4 +274,15 @@ footer {
   font-size: 16px;
   color: #FAFAFA;
   text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  header {
+    height: 50px;
+  }
+  
+  .container {
+    width: 90%;
+  }
+  
 }
