@@ -307,8 +307,10 @@ footer {
     background-color: #FAFAFA;
   }
   
-  .list-bar:first-child {
-    margin-top: 10px;
+  
+  
+ .list-bar:nth-child(2) {
+    background: rgba(255, 255, 255, 0);
   }
   
   .nav-list {
